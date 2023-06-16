@@ -3,7 +3,7 @@
 This program makes the robocar operate in two modes:
 > Control mode: move up, down, left, right.
 
-> Follow line mode: My robot use 5 sensor.
+> Follow line mode: My robot uses 5 sensors.
 
 Code built on PlatformIO.
 
@@ -16,7 +16,7 @@ Code built on PlatformIO.
 
 ## Instruct
 ### Library
-Downd this library: 
+Download this library: 
 [QTRSensor](https://github.com/pololu/qtr-sensors-arduino.git)
 
 ### Setup properties
@@ -51,12 +51,12 @@ const int GOAL = 2000;
 ## Synchronize receiving and sending data
 Default: The character that marks the end of a send command is "#"
 
-You can custom that character in file "Uart.h" (Line 20)
+You can custom that character in the file "Uart.h" (Line 20)
 
 ## Control signal
-- "F" : Forward
-- "B" : Back
-- "R" : Turn right
-- "L" : Turn left
+- "F": Forward
+- "B": Back
+- "R": Turn right
+- "L": Turn left
 
-Custom it in function Mode_control()
+Custom it in the function Mode_control()
