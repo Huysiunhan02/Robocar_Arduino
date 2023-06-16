@@ -9,7 +9,7 @@ Code built on PlatformIO.
 
 ## Hardware devices
 - Arduino Uno R3
-- Module L298 control motor
+- Module L298 control 2 motors
 - QTR Sensor (*5)
 - HCSR04-Distance
 - Module Bluetooth HC06
@@ -47,3 +47,16 @@ const int GOAL = 2000;
 #### Note: 
 - Each speed will need to set different PID parameters. You need to change the PID parameter to suit your robot.
 - "GOAL" will also depend on the number of QTR sensors.
+
+## Synchronize receiving and sending data
+Default: The character that marks the end of a send command is "#"
+
+You can custom that character in file "Uart.h" (Line 20)
+
+## Control signal
+- "F" : Forward
+- "B" : Back
+- "R" : Turn right
+- "L" : Turn left
+
+Custom it in function Mode_control()
